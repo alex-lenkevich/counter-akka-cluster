@@ -8,4 +8,8 @@
 
 ### Run node(s)
 > ./runNode.sh [SEED_ADDRESS] [NODE_NUMBER] [NODE_COUNT] [SECRET]
-# counter-akka-cluster
+
+## Improvements:
+- Nodes should check if message has been delivered
+- Link docker containers together in order to not pass seed ip to nodes.
+- Code clean-up
