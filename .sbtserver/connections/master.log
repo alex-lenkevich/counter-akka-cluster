@@ -1,0 +1,35 @@
+New log file opened at Sun Nov 29 21:23:11 EET 2015 by 5803@A-Lenkevich-01.Dlink
+Taking next connection to: 58862
+New client attempting to connect on port: 58863-58862
+  Address = /192.168.0.89:58862
+This client on port 58863 has uuid 59f869d6-4c39-49db-9ac1-f57ff3e768c8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-59f869d6-4c39-49db-9ac1-f57ff3e768c8
+Taking next connection to: 58862
+New client attempting to connect on port: 58864-58862
+  Address = /192.168.0.89:58862
+Handshake exception on socket: 58864
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58862
+New client attempting to connect on port: 58865-58862
+  Address = /192.168.0.89:58862
+This client on port 58865 has uuid 03a97c67-a093-4f2e-99f1-76ee2261e490 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-59f869d6-4c39-49db-9ac1-f57ff3e768c8, activator-03a97c67-a093-4f2e-99f1-76ee2261e490
+Taking next connection to: 58862
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 5803@A-Lenkevich-01.Dlink logs at Sun Nov 29 21:26:13 EET 2015, goodbye.
